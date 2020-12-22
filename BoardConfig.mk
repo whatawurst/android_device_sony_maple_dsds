@@ -15,19 +15,19 @@
 
 ### INHERIT FROM YOSHINO-COMMON
 include device/sony/yoshino-common/BoardConfigPlatform.mk
-include vendor/sony/maple/BoardConfigVendor.mk
+include vendor/sony/maple_dsds/BoardConfigVendor.mk
 
-DEVICE_PATH := device/sony/maple
+DEVICE_PATH := device/sony/maple_dsds
 
 PRODUCT_PLATFORM := yoshino
 
 ### BOOTLOADER
-TARGET_BOOTLOADER_BOARD_NAME := G8141
+TARGET_BOOTLOADER_BOARD_NAME := G8142
 
 ### KERNEL
-TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
+TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_dsds_defconfig
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
+BOARD_KERNEL_CMDLINE += androidboot.hardware=maple_dsds
 
 ### PARTITIONS
 # See also /proc/partitions on the device
@@ -50,6 +50,9 @@ BOARD_MODEM_CUSTOMIZATIONS := true
 
 ### IMS
 BOARD_IMS_CAMERA := true
+
+### HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 ### SYSTEM PROPS
 # Add device-specific ones

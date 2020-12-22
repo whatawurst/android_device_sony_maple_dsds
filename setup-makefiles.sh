@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=maple
+DEVICE=maple_dsds
 VENDOR=sony
 
 INITIAL_COPYRIGHT_YEAR=2017

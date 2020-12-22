@@ -1,28 +1,28 @@
-# system prop for maple
+# system prop for maple_dsds
 
 ### USB
 ro.vendor.usb.pid_suffix=1F1
 
 ### RADIO
-# This will be set by loading
-# /oem/system-properties/config.prop
-# ro.telephony.default_network=9
+ro.telephony.default_network=9,1
+persist.vendor.radio.multisim.config=dsds
+persist.radio.multisim.config=dsds
 
 ### API
 # First released API level
-ro.product.first_api_level=26
+ro.product.first_api_level=25
 
 ##### Add values MiscTA #####
 # /system/etc/prop.default
-ro.semc.version.sw=1307-7511
-ro.semc.version.sw_revision=47.2.A.11.228
-ro.semc.version.sw_variant=GLOBAL-LTE4A
+ro.semc.version.sw=1306-8501
+ro.semc.version.sw_revision=47.2.A.10.107
+ro.semc.version.sw_variant=GLOBALDS-LTE4D
 ro.semc.version.sw_type=user
 
 # /system/build.prop
-ro.semc.product.model=G8341
-ro.semc.ms_type_id=PM-1054-BV
+ro.semc.product.model=G8142
+ro.semc.ms_type_id=PM-1031-BV
 ro.semc.version.fs=GENERIC
-ro.semc.version.fs_revision=47.2.A.11.228
+ro.semc.version.fs_revision=47.2.A.10.107
 ro.semc.product.name=Xperia XZ Premium
 ro.semc.product.device=G81

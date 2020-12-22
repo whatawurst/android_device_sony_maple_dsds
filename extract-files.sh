@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=maple
+DEVICE=maple_dsds
 VENDOR=sony
 
 # Load extract_utils and do some sanity checks

@@ -381,7 +381,7 @@ vendor/lib/camera/libexcal_scene_detector_plugin.so
 vendor/lib/camera/libexcal_snapshot_ctrl_plugin.so
 vendor/lib/camera/libexcal_splitter_plugin.so
 vendor/lib/camera/libexcal_stream_ctrl_plugin.so
-vendor/lib/hw/camera.qcom.so:vendor/lib/hw/camera.maple.so
+vendor/lib/hw/camera.qcom.so:vendor/lib/hw/camera.maple_dsds.so
 vendor/lib/libcameralight.so
 vendor/lib/libcammw.so
 vendor/lib/libcammw_util.so

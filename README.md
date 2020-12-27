@@ -1,10 +1,10 @@
-Device configuration for Sony Xperia XZ1 (poplar)
+Device configuration for Sony Xperia XZ Premium dual sim variant (maple_dsds)
 ========================================================
 
 Description
 -----------
 
-This repository is for LineageOS 18.1 on Sony Xperia XZ1 (poplar).
+This repository is for LineageOS 18.1 on Sony Xperia XZ Premium dual sim variant (maple_dsds).
 
 How to build LineageOS
 ----------------------
@@ -27,10 +27,10 @@ How to build LineageOS
             <!-- SONY -->
             <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-18.1" />
             <project name="whatawurst/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-18.1" />
-            <project name="whatawurst/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-18.1" />
+            <project name="whatawurst/android_device_sony_maple_dsds" path="device/sony/maple_dsds" remote="github" revision="lineage-18.1" />
 
             <!-- Pinned blobs for poplar -->
-            <project name="whatawurst/android_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-18.1" />
+            <project name="whatawurst/android_vendor_sony_maple_dsds" path="vendor/sony/maple_dsds" remote="github" revision="lineage-18.1" />
         </manifest>
 
 * Sync the repo:
@@ -39,13 +39,13 @@ How to build LineageOS
 
 * Extract vendor blobs
 
-        cd device/sony/poplar
+        cd device/sony/maple_dsds
         ./extract-files.sh
 
 * Setup the environment
 
         source build/envsetup.sh
-        lunch lineage_poplar-userdebug
+        lunch lineage_maple_dsds-userdebug
 
 * Build LineageOS
 

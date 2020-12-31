@@ -202,4 +202,13 @@
         <sim_config_id>S366.7</sim_config_id>
         <sim_config_id>S366.19</sim_config_id>
     </configuration>
+    <configuration config_id="928">
+        <sim_config_id>S285.1</sim_config_id>
+        <sim_config_id>S285.2</sim_config_id>
+        <sim_config_id>S285.3</sim_config_id>
+    </configuration>
+    <configuration config_id="929">
+        <sim_config_id>S8760.1</sim_config_id>
+        <sim_config_id>S8760.2</sim_config_id>
+    </configuration>
 </configurations>

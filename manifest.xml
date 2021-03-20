@@ -375,26 +375,6 @@
         <fqname>@1.0::IHDCPSession/wifidisplayhdcphal</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.quicinc.cne.api</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IApiService</name>
-            <instance>cnd</instance>
-        </interface>
-        <fqname>@1.1::IApiService/cnd</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>com.quicinc.cne.server</name>
-        <transport>hwbinder</transport>
-        <version>2.2</version>
-        <interface>
-            <name>IServer</name>
-            <instance>cnd</instance>
-        </interface>
-        <fqname>@2.2::IServer/cnd</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.display.color</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -423,6 +403,19 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IDisplayPostproc/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.livedisplay</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
@@ -458,16 +451,6 @@
         <fqname>@3.0::ILocHidlGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.alarm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAlarm</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IAlarm/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.cacert</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -494,9 +477,20 @@
         <interface>
             <name>IDataConnection</name>
             <instance>slot1</instance>
+            <instance>slot2</instance>
         </interface>
         <fqname>@1.1::IDataConnection/slot1</fqname>
         <fqname>@1.1::IDataConnection/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIWlan</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
@@ -517,26 +511,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.data.iwlan</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IIWlan</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IPerf</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qdutils_disp</name>
@@ -690,26 +664,6 @@
         <fqname>@1.0::IRTPService/imsrtpservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.semc.hardware.charger</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICharger</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ICharger/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.semc.hardware.display</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplay</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplay/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.semc.hardware.light</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -752,16 +706,6 @@
         <fqname>@1.0::IVendorSomcCameraProvider/internal/0</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.somc.hardware.graphics</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISomcGfx</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISomcGfx/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.miscta</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -770,16 +714,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IMisctaGlobal/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.pip</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPip</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IPip/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.somc.hardware.security.secd</name>
@@ -792,26 +726,6 @@
         <fqname>@1.0::IDeviceSecurity/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.somc.hardware.superstamina</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISuperStamina</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISuperStamina/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.swiqi</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHidlSwiqi</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHidlSwiqi/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.wifi</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -820,28 +734,5 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::ISomcWifi/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.somc.hardware.wifidriver</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISomcWifiDriver</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISomcWifiDriver/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDisplayModes</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IPictureAdjustment</name>
-            <instance>default</instance>
-        </interface>
     </hal>
 </manifest>

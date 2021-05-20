@@ -683,18 +683,6 @@
         <fqname>@1.0::ISomcThermalEngineWrapper/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.semc.system.idd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IIdd</name>
-            <instance>default</instance>
-            <instance>logreader</instance>
-        </interface>
-        <fqname>@1.0::IIdd/default</fqname>
-        <fqname>@1.0::IIdd/logreader</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <version>1.0</version>

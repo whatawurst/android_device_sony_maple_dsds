@@ -8,7 +8,7 @@ persist.radio.multisim.config=dsds
 
 ### API
 # First released API level
-ro.product.first_api_level=25
+ro.product.first_api_level=26
 
 ##### Add values MiscTA #####
 # /system/etc/prop.default

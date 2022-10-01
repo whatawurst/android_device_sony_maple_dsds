@@ -15,4 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_maple_dsds.mk
+    $(LOCAL_DIR)/twrp_maple_dsds.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_maple_dsds-eng \
+    twrp_maple_dsds-userdebug
